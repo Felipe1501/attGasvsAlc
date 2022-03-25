@@ -50,7 +50,7 @@ export default function App() {
       />
     </View>
     <View style={styles.bloco}>
-        <Text style={styles.textoBloco}>VALOR ALCOOL:</Text>
+        <Text style={styles.textoBloco}>VALOR ÁLCOOL:</Text>
         <TextInput
           maxLength={4} 
           style={styles.input}
@@ -124,6 +124,6 @@ const styles = StyleSheet.create({
     width: 80,
     height: 70,
     margin: 5,
-    borderRadius: 20
+    borderRadius: 15
   }
 });
