@@ -9,12 +9,13 @@ export default function App() {
   const [resposta, setResposta] = useState();
 
   function calcular(){
-    setResultado (parseFloat (papinho1) / parseFloat(papinho2));
-
-    if(result <= 0.7){
+    let calc = (parseFloat (papinho2) / parseFloat(papinho1));
+    setResultado(calc.toFixed(2));
+    if(calc  <= 0.7){
       setResposta("JOVEM MANCEPO, ABASTEÇA COM ÁLCOOL!!!");
+      
     }else{
-      setResposta("JOVEM MANCEPO, ABASTEÇA COM GASOLINA!!!")
+      setResposta("JOVEM MANCEPO, ABASTEÇA COM GASOLINA!!!");
     }
   }
 
@@ -25,6 +26,7 @@ export default function App() {
     setResultado(null);
     setPapinho1("");
     setPapinho2("");
+    setResposta("");
   }
 
   return (
