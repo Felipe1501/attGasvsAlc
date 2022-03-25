@@ -40,7 +40,8 @@ export default function App() {
       />
       <View style={styles.bloco}>
         <Text style={styles.textoBloco}>VALOR GASOLINA:</Text>
-        <TextInput 
+        <TextInput
+          maxLength={4} 
           style={styles.input}
           keyboardType="numeric"
           value={papinho1}
@@ -50,7 +51,8 @@ export default function App() {
     </View>
     <View style={styles.bloco}>
         <Text style={styles.textoBloco}>VALOR ALCOOL:</Text>
-        <TextInput 
+        <TextInput
+          maxLength={4} 
           style={styles.input}
           keyboardType="numeric"
           placeholder='ALCOOL:'
@@ -84,7 +86,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFE6FF',
     alignItems: 'center',
     justifyContent: 'center',
   },
